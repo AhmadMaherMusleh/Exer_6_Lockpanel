@@ -5,11 +5,14 @@ Item {
     width: 90
     height: 90
 
+    property string number
+
+
     Button {
         id: button
 
         anchors.fill: parent
-        text: "X";
+        text: number;
         highlighted: false
         checkable: false
         font.pointSize: 40
