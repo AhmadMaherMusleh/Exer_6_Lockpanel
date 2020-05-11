@@ -18,11 +18,13 @@ Window {
 
              onEnterPressed: {
                  console.log("Enter")
+                 dashboard.startProgramming();
              }
 
              onClearPressed: {
                  console.log("Clear")
                  dashboard.startUnlocking();
+
              }
         }
 

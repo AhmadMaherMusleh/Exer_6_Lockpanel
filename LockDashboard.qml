@@ -16,6 +16,12 @@ Item {
         property bool unlocked: false
         property bool programming: false
 
+        onUnlockedChanged: {
+            priv.programming=false;
+        }
+
+        property variant newPasscode: [1,2,3,4]
+
         function unlock(){
             priv.unlocked=true;
         }
@@ -33,34 +39,63 @@ Item {
         priv.unlocked=false;
     }
 
+    function startProgramming(){
+
+        if(priv.unlocked==true){
+            priv.programming=true;
+            priv.inputIndex=0;
+        }
+    }
+
+
     function numberInput(number)
-
-        {
+    {
         if(priv.inputIndex>=0)  //check if it>=0
+        {
+            if(priv.programming)
             {
-
-            if(number!==priv.passcode[priv.inputIndex])
-                {
-                lock();
-                return
+                priv.newPasscode[priv.inputIndex]=number;
             }
-
-            if(priv.inputIndex==3){
-                priv.unlock();
-            }
-
             else{
-                priv.inputIndex++
+
+                if(number!==priv.passcode[priv.inputIndex])
+                {
+                    lock();
+                    return
+                 }
             }
+
+                if(priv.inputIndex==3)
+                {
+                    if(priv.programming)
+                    {
+                        for(var i=0;i<4;i++)
+                        {
+                            priv.passcode[i]=priv.newPasscode[i];
+                        }
+
+                        lock()
+                    }
+                    else{
+
+                    priv.unlock();
+                    }
+                }
+                else
+                {
+                    priv.inputIndex++
+                }
 
         }
 
         else
-            {
+        {
             return
         }
 
+
     }
+
 
 
     Rectangle{
