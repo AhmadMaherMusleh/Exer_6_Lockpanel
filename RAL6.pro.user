@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.11.2, 2020-05-10T17:34:51. -->
+<!-- Written by QtCreator 4.11.2, 2020-05-11T17:35:51. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -287,8 +287,9 @@
     </valuelist>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:D:/Master Electrical/2nd semester/Applied Computer Systems Laboratory 2/My work/Exer_6/Exer_6 code/RAL6/RAL6/RAL6.pro</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">D:/Master Electrical/2nd semester/Applied Computer Systems Laboratory 2/My work/Exer_6/Exer_6 code/RAL6/RAL6/RAL6.pro</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">RAL62</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:D:/Master Electrical/2nd semester/Applied Computer Systems Laboratory 2/My work/Exer_6/Exer_6 code/github_repo/Exer_6_Lockpanel/RAL6.pro</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">D:/Master Electrical/2nd semester/Applied Computer Systems Laboratory 2/My work/Exer_6/Exer_6 code/github_repo/Exer_6_Lockpanel/RAL6.pro</value>
     <value type="QString" key="RunConfiguration.Arguments"></value>
     <value type="bool" key="RunConfiguration.Arguments.multi">false</value>
     <value type="QString" key="RunConfiguration.OverrideDebuggerStartup"></value>
